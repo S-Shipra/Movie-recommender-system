@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Movies</title>
+</head>
+<body>
+    <h1>Recommended Movies</h1>
+    <div style="display: flex; flex-wrap: wrap;">
+        {% for movie_html in recommendations %}
+            <div style="width: 20%; margin: 10px;">{{ movie_html|safe }}</div>
+        {% endfor %}
+    </div>
+    <a href="/">Go back</a>
+</body>
+</html>
